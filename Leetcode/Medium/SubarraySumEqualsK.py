@@ -1,4 +1,4 @@
-# Solved using Prefix Sum and Sliding Window .
+# Solved using Prefix Sum .
 def SubarraySumEqualsK(li,k):
     n = len(li)
     count = 0
@@ -15,3 +15,7 @@ def SubarraySumEqualsK(li,k):
 print(SubarraySumEqualsK([1,1,1], 2))   # 2
 print(SubarraySumEqualsK([2,1,1], 2))   # 2
 print(SubarraySumEqualsK([1,-1,1], 1))  # 3
+
+
+
+
