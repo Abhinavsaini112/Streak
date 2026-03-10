@@ -4,6 +4,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
+'''Preorder -> [root,left,right] and Inorder -> [left,root,right]'''
+
 def BuildTree(inorder,preorder):
     #hashmap to store the index of inorder values
     inorder_map = {val : idx for idx , val in enumerate(inorder)}

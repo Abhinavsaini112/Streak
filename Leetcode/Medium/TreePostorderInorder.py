@@ -4,6 +4,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
+'''Postorder -> [left,right,root] and Inorder -> [left,root,right]'''
+'''Time Complexity is O(n) and Space Complexity is O(n)'''
 
 def buildTree(inorder, postorder):
 
