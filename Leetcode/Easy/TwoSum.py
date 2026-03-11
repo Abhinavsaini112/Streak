@@ -3,7 +3,7 @@ from typing import List
 def TwoSum(nums:List[int],target:int)->List[int]:
     pair={}
     for index,value in enumerate(nums):
-        difference=abs(target-value)
+        difference = target-value
         if difference in pair:
             return [pair[difference],index]
         pair[value]=index
