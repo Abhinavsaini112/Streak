@@ -4,10 +4,17 @@ class TreeNode:
         self.left = left
         self.right = right
 
+def printTree(root):
+    if not root:
+        return
+    print(root.val, end=" ")
+    printTree(root.left)
+    printTree(root.right)
+
 '''Postorder -> [left,right,root] and Inorder -> [left,root,right]'''
 '''Time Complexity is O(n) and Space Complexity is O(n)'''
 
-def buildTree(inorder, postorder):
+def BuildTree(postorder, inorder):
 
     # hashmap to store index of inorder values
     inorder_map = {val: idx for idx, val in enumerate(inorder)}
@@ -36,3 +43,8 @@ def buildTree(inorder, postorder):
         return root
 
     return helper(0, len(inorder) - 1)
+
+Postorder = [9,15,7,20,3]
+Inorder  = [9,3,15,20,7]
+result = BuildTree(Postorder,Inorder)
+printTree(result)
