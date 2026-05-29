@@ -14,4 +14,4 @@ def combinations(nums,k):
     backtracking(0 , [])
     return result
 
-print(combinations([1,2,3,4],3))
+print(combinations([1,2,3,4],2))
