@@ -53,9 +53,9 @@ class Map:
                 if prev is None:
                     self.bucket[index] = head.next
                 else:
-                    prev = head.next
+                    prev.next = head.next
                 self.count -= 1
-                return head.next
+                return head.value
             prev = head
             head = head.next
         return None
@@ -63,8 +63,13 @@ class Map:
 
 
 m = Map()
-m.insert("Abhinav",2)
-m.insert("Kartavya",9)
-print(m.size())
-m.remove("Abhinav")
-print(m.size())
+
+m.insert("Abhinav", 2)
+m.insert("Kartavya", 9)
+
+print(m.size())      # 2
+print(m.remove("Abhinav"))  # 2
+print(m.size())      # 1
+print(m.getValue("Abhinav")) # None
+
+

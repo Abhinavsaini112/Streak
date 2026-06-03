@@ -40,7 +40,7 @@ def PairSum0(nums):
     return count
 
 array = [2,-2,2,1,-6,-2,6,3]
-array1 = [0,0,0]
+array1 = [0,0,0,0]
 freq = PairSum0(array)
 freq1 = PairSum0(array1)
 print(freq)

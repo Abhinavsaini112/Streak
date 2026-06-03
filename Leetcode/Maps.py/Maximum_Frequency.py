@@ -11,9 +11,7 @@ def Maximum_Frequency(arr):
 
     return ele
 
-array = [2,12,2,11,12,2,1,2,2,11,12,6]
+array = [2,12,2,11,12,2,1,2,2,11,12,12,12,12]
 element = Maximum_Frequency(array)
 print(element)
              
-
-
