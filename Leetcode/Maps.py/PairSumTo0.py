@@ -9,17 +9,17 @@ def PairSumto_0(array):
 
     for nums in result:
 
-        if nums in visited : 
-            continue
+        # if nums in visited : 
+        #     continue
         
         if nums == 0:
-            count += result[0]*(result[-0]-1)//2
+            count += result[0]*(result[0]-1)//2
 
         elif -nums in result :
             count += result[nums]*result[-nums]
         
-        visited.add(nums)
-        visited.add(-nums)
+        # visited.add(nums)
+        # visited.add(-nums)
 
     return count
     

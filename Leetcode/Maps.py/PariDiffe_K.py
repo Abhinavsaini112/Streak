@@ -12,8 +12,8 @@ def PrintPairDiffK(li,k):
     return count
 
 
-li = [4,4,4,4]
-k = 0
+li,k = [4,4,4,4],0
+# li,k = [2,-1,3,5,6,0,-1,2,6],3
 answer = PrintPairDiffK(li,k)
 print(answer)
 
@@ -34,14 +34,14 @@ def PrintPairDiffK2(li,k):
         for i in m:
             if (i - k) in m:
                 count += m[i-k] * m[i]
-            if k != 0 and (i + k) in m:
+            if (i + k) in m:
                 count += m[i+k] * m[i]
             m[i] = 0
 
     return count
 
-li = [2,-1,3,5,6,0,-1,2,6],k = 3
-# li=[6,6,6,6],k = 0
+li,k = [2,-1,3,5,6,0,-1,2,6],3
+# li,k = [6,6,6,6],0
 
 answer = PrintPairDiffK2(li,k)
 print(answer)
