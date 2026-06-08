@@ -33,6 +33,11 @@ class Map:
         self.bucket[index] = newNode
         self.count += 1
 
+        # Now we will check the load factor after insertion.
+        loadFactor = self.count/self.bucketsize
+        if loadFactor >= 0.7:
+            self.rehash()
+
     def getValue(self, key):
         hc = hash(key)
         index = self.getBucketIndex(hc)
@@ -59,6 +64,18 @@ class Map:
             prev = head
             head = head.next
         return None
+    
+    def rehash(self):
+        temp = self.bucket  #To store the old bucket
+        self.bucket = [None for i in range(2 * self.bucketsize)]
+        self.bucketsize = 2 * self.bucketsize #doubling the size
+        self.count = 0
+        for head in temp:  #inserting each value of old bucket to new one
+            while head is not None:
+                self.insert(head.key,head.value)
+                head = head.next
+
+
 
 
 
@@ -71,5 +88,7 @@ print(m.size())      # 2
 print(m.remove("Abhinav"))  # 2
 print(m.size())      # 1
 print(m.getValue("Abhinav")) # None
+
+
 
 
