@@ -1,7 +1,5 @@
 def PyramidPattern(num):
-
     for i in range(num):
-    
         j = num - i - 1
         while j > 0 :
             print(' ', end = '')

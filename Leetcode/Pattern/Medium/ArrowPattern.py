@@ -1,7 +1,7 @@
-def ArrowPattern(num) :
+def ArrowPattern(num):
     n , m = (num + 1) // 2 , (num - 1) // 2
 
-    for i in range(n) :
+    for i in range(n):
         for j in range(i): 
             print(" ", end = '')
 
