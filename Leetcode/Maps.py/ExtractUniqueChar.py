@@ -13,7 +13,6 @@ def UniqueChar(s):
 
     seen = set()
     result = []
-
     for ch in s:
         if ch not in seen:
             seen.add(ch)

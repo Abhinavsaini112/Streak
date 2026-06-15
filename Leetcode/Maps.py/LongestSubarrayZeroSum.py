@@ -1,5 +1,4 @@
 def SumZero(li):
-
     m = {}
     sum = 0
     maxlength = 0

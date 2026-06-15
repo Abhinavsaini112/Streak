@@ -1,5 +1,4 @@
-def LongConsSeq(arr):
-
+def LongConsSeq(arr): 
     '''Method 1
     sort the array than find the longest consecutive sequence .'''
 

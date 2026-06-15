@@ -1,5 +1,4 @@
 def PrintPairDiffK(li,k):
-    
     m = {}
     count = 0
     for i in li:
@@ -19,7 +18,6 @@ print(answer)
 
 
 def PrintPairDiffK2(li,k):
-    
     m = {}
     count = 0
 

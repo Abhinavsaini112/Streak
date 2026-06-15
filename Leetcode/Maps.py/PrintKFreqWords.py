@@ -4,6 +4,7 @@ def Freq_k(arr,k):
     words = arr.split()
     for i in words:
         result[i] = result.get(i,0) + 1
+        
     for key in result:
         if result[key] == k :
             li.append(key)

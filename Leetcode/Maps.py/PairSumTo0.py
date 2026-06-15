@@ -30,7 +30,6 @@ print(freq)
 
 
 def PairSum0(nums):
-
     count = 0
     result = {}
     for i in nums:

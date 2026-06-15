@@ -1,10 +1,10 @@
 def wordStem(words):
+    
     shortest = min(words, key=len)
-    print(shortest)
     m = len(shortest)
 
     BASE = 257
-    MOD = 10**9 + 7
+    MOD = 10 ** 9 + 7
 
     def get_common_hashes(length):
         common = None
