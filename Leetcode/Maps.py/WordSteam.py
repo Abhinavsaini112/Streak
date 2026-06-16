@@ -1,3 +1,8 @@
+'''Rabin Karp Algorithm
+1. Ascii code
+2. Rolling hash function
+3. Spurious hits. '''
+
 def wordStem(words):
     
     shortest = min(words, key=len)

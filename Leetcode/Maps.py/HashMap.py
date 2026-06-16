@@ -1,4 +1,3 @@
-
 class MapNode:
     def __init__(self, key, value):
         self.key = key
@@ -20,7 +19,6 @@ class Map:
     def insert(self, key, value):
         hc = hash(key)
         index = self.getBucketIndex(hc)
-        # print(index)
         head = self.bucket[index]
         while head is not None:
             if head.key == key:
@@ -59,6 +57,7 @@ class Map:
                     self.bucket[index] = head.next
                 else:
                     prev.next = head.next
+                    head.next = None
                 self.count -= 1
                 return head.value
             prev = head
