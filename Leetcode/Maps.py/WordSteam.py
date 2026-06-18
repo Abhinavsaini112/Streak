@@ -4,7 +4,6 @@
 3. Spurious hits. '''
 
 def wordStem(words):
-    
     shortest = min(words, key=len)
     m = len(shortest)
 
