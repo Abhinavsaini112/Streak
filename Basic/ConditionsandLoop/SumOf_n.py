@@ -10,4 +10,4 @@ def Sum_n(n):
         total += i
     return total
         
-print(Sum_n(2))
+print(Sum_n(12))
