@@ -1,0 +1,4 @@
+Things to look out for:
+1. Find a recurring pattern, first among the lines and then within the rows.
+2. For each line, find the logic for parsing it . (Number of lines)
+3. Do the same for the rows ( Elements within it).
