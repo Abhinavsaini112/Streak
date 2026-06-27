@@ -10,6 +10,7 @@ def RectangularNumber(n):
             temp = temp + 1
             print(temp, end = "")
         print()
+        
     for i in range(n - 1,0,-1):
         temp = n
         for j in range(1,i):
