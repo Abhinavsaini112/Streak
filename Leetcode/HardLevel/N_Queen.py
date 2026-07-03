@@ -1,5 +1,4 @@
 def solve_n_queen(n):
-
     solutions = []
     rows = set()
     diag1 = set()   # row - col
@@ -43,11 +42,13 @@ def solve_n_queen(n):
 
 # Example
 ans = solve_n_queen(4)
-
+count = 0
 for solution in ans:
     for row in solution:
         print(row)
+    count += 1
     print()
+print(count)
 
 
 # Time Complexity(n!)
@@ -58,7 +59,7 @@ for solution in ans:
 92
 So:
 There are 92 valid arrangements
-where 8 queens can be placed on an 8×8 chessboard
+where 8 queens can be placed on an 8 X 8 chessboard
 such that no two queens attack each other.
 🔍 Unique Solutions
 Many of those are symmetric (rotations/reflections).
@@ -67,3 +68,6 @@ The number of unique solutions is:
 Meaning:
 12 fundamentally different patterns
 Remaining are rotations/mirrors of these.'''
+
+# board = ["." * 4 for _ in range(4)]
+# print(board)
