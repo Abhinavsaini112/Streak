@@ -3,18 +3,15 @@ def solve_n_queen(n):
     rows = set()
     diag1 = set()   # row - col
     diag2 = set()   # row + col
-
     board = ["." * n for _ in range(n)]
 
     def place(col):
-
         # Base case
         if col == n:
             solutions.append(board.copy())
             return
 
         for row in range(n):
-
             # Check if queen can be placed
             if row in rows or (row - col) in diag1 or (row + col) in diag2:
                 continue
@@ -23,7 +20,6 @@ def solve_n_queen(n):
             rows.add(row)
             diag1.add(row - col)
             diag2.add(row + col)
-
             board[row] = (board[row][:col] + "Q" + board[row][col + 1:])
 
             # Recursive call
@@ -33,7 +29,6 @@ def solve_n_queen(n):
             rows.remove(row)
             diag1.remove(row - col)
             diag2.remove(row + col)
-
             board[row] = (board[row][:col] + "." + board[row][col + 1:])
 
     place(0)
