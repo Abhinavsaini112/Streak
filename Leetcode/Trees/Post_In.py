@@ -24,7 +24,7 @@ def BuildTree(Postorder, Inorder):
         inorderIndex = inordermap[rootValue]
 
         root.right = helper(inorderIndex + 1, right)
-
+ 
         root.left = helper(left, inorderIndex - 1)
 
         return root
@@ -37,7 +37,7 @@ def postorderTraversal(root):
         postorderTraversal(root.right)
         print(root.val, end=" ")
 
-postorder = [3, 9, 20, 15, 7]
+postorder = [9, 15, 7, 20, 3]
 inorder = [9, 3, 15, 20, 7]
 
 root = BuildTree(postorder, inorder)
