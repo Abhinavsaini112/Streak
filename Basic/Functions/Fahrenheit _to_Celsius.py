@@ -9,6 +9,7 @@ def F_C(start,end,step):
 start = int(input("Enter the start Fahrenheit value: "))
 end = int(input("Enter the end Fahrenheit value: "))
 step = int(input("Enter the value of step: "))
+
 F_C(start,end,step)
 # li = F_C(start,end,step)
 # for i in li:
