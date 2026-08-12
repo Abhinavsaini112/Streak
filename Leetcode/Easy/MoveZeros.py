@@ -1,7 +1,6 @@
 def MoveZeros(lst):
     write = 0
     read = 0
-
     for i in range(len(lst)):
         if lst[read] != 0:
             lst[write] = lst[read]
@@ -15,7 +14,6 @@ def MoveZeros(lst):
     return lst
 
 li = [0, 4, 1, 2, 0, 0, 2, 3, 1, 0]
-
 print(MoveZeros(li))
 
 '''Can you minimize the total number of operations done?'''
@@ -29,5 +27,4 @@ def Movezeros(list):
     return list
 
 li = [0, 4, 1, 2, 0, 0, 2, 3, 1, 0]
-
 print(Movezeros(li))
