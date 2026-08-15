@@ -11,6 +11,7 @@ def MoveZeros(lst):
     while write < len(lst):
         lst[write] = 0
         write += 1
+
     return lst
 
 li = [0, 4, 1, 2, 0, 0, 2, 3, 1, 0]
@@ -24,6 +25,7 @@ def Movezeros(list):
         if list[read] != 0:
             list[write], list[read] = list[read], list[write]
             write += 1
+            
     return list
 
 li = [0, 4, 1, 2, 0, 0, 2, 3, 1, 0]
