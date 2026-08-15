@@ -9,5 +9,5 @@ def MaximumAverageSum(li,k):
 
     return max_sum / k
 
-li = [1,12-5,-6,50,3]
+li = [1,12,-5,-6,50,3]
 print(MaximumAverageSum(li,4))
