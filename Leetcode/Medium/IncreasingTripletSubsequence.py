@@ -8,6 +8,7 @@ def IncreasingTripletSubsequence(nums):
                 if nums[i] < nums[j] < nums[k]:
                     return True
     return False
+print(IncreasingTripletSubsequence([1,2,3,4,5]))   # True
 
 # Approach to solve in O(n) time complexity
 def IncreasingTripletSubsequence(nums):

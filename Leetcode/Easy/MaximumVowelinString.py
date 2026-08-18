@@ -1,3 +1,5 @@
+# Sliding Window Approach
+
 def MaxVowels(str,k):
     vowels = {'a','e','i','o','u'}
     current_vowels = 0

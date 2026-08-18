@@ -1,3 +1,5 @@
+# Sliding Window Approach
+
 def MaximumAverageSum(li,k):
     current_sum = sum(li[:k])
     max_sum = current_sum
