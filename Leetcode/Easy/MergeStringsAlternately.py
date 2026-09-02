@@ -21,4 +21,6 @@ print(result)
  Space Complexity is O(n+m) 
  where n and m are the length of the string.'''
 
-"Pattern you're learning: this is an example of two-pointer/index traversal + output construction."
+'''Pattern you're learning: this is an example of two-pointer/index traversal
++ output construction.'''
+
