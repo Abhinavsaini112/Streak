@@ -14,4 +14,3 @@ print(result)
 '''Time Complexity for brute force method is O(min(n,m)*(n+m))
 The efficient one is check -> O(n+m) , GCD -> O(log(min(n,m))),
 Slice -> O(x) so final time complexity is O(n+m) '''
-
