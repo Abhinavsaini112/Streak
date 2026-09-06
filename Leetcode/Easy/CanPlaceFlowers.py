@@ -3,8 +3,8 @@ def PlaceFlower(flowers,n):
         True
     for i in range(len(flowers)):
         empty = (flowers[i] == 0)
-        leftempty = (i == 0) or (flowers[i-1] == 0)
-        rightempty = (i==len(flowers)-1) or (flowers[i+1] == 0)
+        leftempty = (i == 0) or (flowers[i - 1] == 0)
+        rightempty = (i == len(flowers) - 1) or (flowers[i + 1] == 0)
         
         if empty and leftempty and rightempty:
             flowers[i] = 1
