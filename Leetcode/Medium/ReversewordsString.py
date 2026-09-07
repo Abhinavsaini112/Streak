@@ -37,7 +37,7 @@ def RevereseWordsString(s):
             l += 1 
             r -= 1
     # reverse the string
-    reverse(0,n-1)
+    reverse(0,n - 1)
 
     write = 0 
     read = 0
@@ -49,7 +49,7 @@ def RevereseWordsString(s):
             read += 1
         if read == n:
             break
-        
+
         # add space after every word apart from the first word
         if first_word:
             chars[write] = ' '
@@ -62,7 +62,10 @@ def RevereseWordsString(s):
             chars[write] = chars[read]
             write += 1
             read += 1
+
+        # reverse the word
         reverse(word_start , write-1)
+
     return ''.join(chars[:write])
 
 s = " The    sky   is blue   "
