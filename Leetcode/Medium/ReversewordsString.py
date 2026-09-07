@@ -38,15 +38,18 @@ def RevereseWordsString(s):
             r -= 1
     # reverse the string
     reverse(0,n-1)
+
     write = 0 
     read = 0
     first_word = False
     while read < n:
+
         # skip spaces
         while read < n and chars[read] == ' ':
             read += 1
         if read == n:
             break
+        
         # add space after every word apart from the first word
         if first_word:
             chars[write] = ' '
