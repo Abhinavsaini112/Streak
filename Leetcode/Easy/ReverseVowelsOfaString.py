@@ -9,7 +9,6 @@
 # How can you replace characters in a string?
 
 # Brute Force Method
-
 def ReverseVowels(s):
     i = 0
     vowels_list = []
@@ -34,7 +33,6 @@ print(ReverseVowels("leetcode"))
 print(ReverseVowels("Abhinav")) 
 
 # Optimized Approach
-
 def ReverseVowels(s):
     vowels = set('aeiouAEIOU')
     arr = list(s)
@@ -42,18 +40,14 @@ def ReverseVowels(s):
     right = len(arr) - 1
 
     while left < right :
-        while arr[left] not in vowels:
+        while left < right and arr[left] not in vowels:
             left += 1
-            if left > right:
-                break
-        while arr[right] not in vowels:
+        while left < right and arr[right] not in vowels:
             right -= 1
-            if left > right:
-                break
         if left < right:
-            arr[left],arr[right] = arr[right],arr[left]
-        left += 1
-        right -= 1
+            arr[left], arr[right] = arr[right], arr[left]
+            left += 1
+            right -= 1
     
     return "".join(arr)
 
