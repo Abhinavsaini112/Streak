@@ -26,9 +26,11 @@ def StringCompression(chars):
 chars = ["a","a","b","b","c","c","c"]
 length = StringCompression(chars)
 print(length)
+
 chars = ["a"]
 length = StringCompression(chars)
 print(length)
+
 chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b","b"]
 length = StringCompression(chars)
 print(length)
