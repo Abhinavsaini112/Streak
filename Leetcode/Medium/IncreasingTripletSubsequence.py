@@ -8,6 +8,7 @@ def IncreasingTripletSubsequence(nums):
                 if nums[i] < nums[j] < nums[k]:
                     return True
     return False
+
 print(IncreasingTripletSubsequence([1,2,3,4,5]))   # True
 
 # Approach to solve in O(n) time complexity
@@ -29,10 +30,10 @@ def IncreasingTripletSubsequence(nums):
 
 '''This is a greedy algorithm that maintains the smallest possible first and 
 second elements of an increasing subsequence. We greedily minimize these two values
- because smaller candidates maximize the possibility of finding a third larger 
- element.
+because smaller candidates maximize the possibility of finding a third larger 
+element.
 
- "If I can lower a bar, I will always do it."
+"If I can lower a bar, I will always do it."
 Because a smaller first gives us more chances to find a second, and a smaller 
 second gives us more chances to find the third number.'''
 
