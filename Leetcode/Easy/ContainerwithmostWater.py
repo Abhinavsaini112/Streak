@@ -17,7 +17,6 @@ def WaterContainer(li):
 
     return max_area
 
-
 li = [3, 4, 1, 2, 2, 4, 1, 3, 2]
 print(WaterContainer(li))
 
