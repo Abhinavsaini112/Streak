@@ -1,7 +1,6 @@
 def MoveZeros(lst):
     write = 0
-    read = 0
-    for i in range(len(lst)):
+    for read in range(len(lst)):
         if lst[read] != 0:
             lst[write] = lst[read]
             write += 1
