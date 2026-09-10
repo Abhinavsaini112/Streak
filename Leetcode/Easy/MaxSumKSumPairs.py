@@ -34,3 +34,4 @@ def Pair_sum(li,k):
 
 li = [4,1,3,2,1,2,3]
 print(Pair_sum(li,5))
+'''Time Complexity is O(nlogn) and Space Complexity is O(1)'''
