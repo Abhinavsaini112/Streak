@@ -8,3 +8,4 @@ def HighestAltitude(li):
 
 # classic prefix sum problem
 print(HighestAltitude([-5,1,5,0,-1]))
+print(HighestAltitude([-4,-3,-2,-1,4,3,2]))
