@@ -10,7 +10,6 @@ def MaxConsOnes(li,k):
             if li[left] == 0:
                 countzeroes -= 1
             left += 1
-
         currentwindowsize = right - left + 1
         max_length = max(max_length, currentwindowsize)
 
