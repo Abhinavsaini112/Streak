@@ -20,3 +20,5 @@ def UniqueOccurrences(li):
 
 li = [1,2,2,1,3,1,3]
 print(UniqueOccurrences(li))
+
+'''Time Complexity is O(n) and Space Complexity is O(n)'''
