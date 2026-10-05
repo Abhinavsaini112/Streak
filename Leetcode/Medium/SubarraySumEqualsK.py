@@ -8,13 +8,16 @@ def SubarraySumEqualsK(li,k):
         prefixsum += li[i]
         if prefixsum - k in hashmap:
             count += hashmap[prefixsum-k] 
-        
         hashmap[prefixsum] = hashmap.get(prefixsum,0) + 1
+        
     return count
     
 print(SubarraySumEqualsK([1,1,1], 2))   # 2
 print(SubarraySumEqualsK([2,1,1], 2))   # 2
 print(SubarraySumEqualsK([1,-1,1], 1))  # 3
+print(SubarraySumEqualsK([1,2,3], 3))  # 3
+print(SubarraySumEqualsK([1,3,2], 3))  # 3
+
 
 
 
