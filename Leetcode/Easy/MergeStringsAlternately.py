@@ -10,13 +10,11 @@ def MergeStringsAlternately(word1,word2):
 
     return "".join(result)
 
-
 word1 = 'abc'
 word2 = 'def'
 result = MergeStringsAlternately(word1,word2)
 print(result)
 
- 
 '''Time Complexity is O(n+m) 
  Space Complexity is O(n+m) 
  where n and m are the length of the string.'''
