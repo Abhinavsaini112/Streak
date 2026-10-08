@@ -48,3 +48,4 @@ Postorder = [9,15,7,20,3]
 Inorder  = [9,3,15,20,7]
 result = BuildTree(Postorder,Inorder)
 printTree(result)
+
