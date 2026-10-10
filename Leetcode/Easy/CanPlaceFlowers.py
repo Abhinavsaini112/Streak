@@ -18,6 +18,5 @@ n = 2
 result = PlaceFlower(flowers,n)
 print(result)
 
-
 # Time Complexity O(n)
 # Space Complexity O(1)
