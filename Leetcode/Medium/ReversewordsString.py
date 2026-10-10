@@ -27,10 +27,11 @@ s = "The sky is blue"
 result = ReverseWordsString(s)
 print(result)
 
-def RevereseWordsString(s):
+
+def ReverseWordsString(s):
     chars = list(s)
-    n = len(s)
-    
+    n = len(s)  
+
     def reverse(l,r):
         while l < r:
             chars[l], chars[r] =  chars[r], chars[l]
@@ -58,7 +59,7 @@ def RevereseWordsString(s):
 
         word_start = write
 
-        while read < n and chars[read] != '':
+        while read < n and chars[read] != ' ':
             chars[write] = chars[read]
             write += 1
             read += 1
