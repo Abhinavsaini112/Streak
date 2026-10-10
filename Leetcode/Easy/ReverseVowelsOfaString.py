@@ -57,8 +57,10 @@ def ReverseVowels(s):
 print(ReverseVowels("hello"))        
 print(ReverseVowels("leetcode"))     
 print(ReverseVowels("Abhinav"))
+print(ReverseVowels('drghlqd'))
 
-
-
-
-
+'''Remember: Whenever you move pointers inside a loop, 
+check your boundaries before accessing array elements.
+Want to practise this concept with an example involving an empty string, 
+a string with no vowels, or a string with one vowel?/
+'''
