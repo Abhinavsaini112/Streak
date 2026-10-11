@@ -72,3 +72,4 @@ def ReverseWordsString(s):
 s = " The    sky   is blue   "
 result = ReverseWordsString(s)
 print(result)
+
