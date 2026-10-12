@@ -41,4 +41,3 @@ print(IncreasingTripletSubsequence([1,2,3,4,5]))   # True
 print(IncreasingTripletSubsequence([5,4,3,2,1]))   # False
 print(IncreasingTripletSubsequence([2,1,5,0,4,6])) # True
 print(IncreasingTripletSubsequence([1,1,1,1,1,1])) # False
-
