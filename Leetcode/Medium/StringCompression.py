@@ -8,7 +8,6 @@ def StringCompression(chars):
         count = 0
 
         # count consecutive occurences of the current character
-
         while read < n and chars[read] == current_char:
             read += 1
             count += 1
@@ -19,8 +18,7 @@ def StringCompression(chars):
         if count > 1:
             for digit in str(count):
                 chars[write] = digit
-                write += 1
-            
+                write += 1 
     return write 
 
 chars = ["a","a","b","b","c","c","c"]
