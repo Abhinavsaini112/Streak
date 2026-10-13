@@ -4,7 +4,6 @@ def MoveZeros(lst):
         if lst[read] != 0:
             lst[write] = lst[read]
             write += 1
-        read += 1
 
     # Fill remaining positions with zeros
     while write < len(lst):
